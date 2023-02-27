@@ -1,0 +1,8 @@
+#content {
+    background-image: url('./img.jpg');
+    background-color: aqua;
+}
+
+.header {
+    color: blue;
+}
