@@ -1,15 +1,9 @@
 import Menu from './menu.csv'
+import Img from './food.jpg'
 
 export default function menu(container) {
-    const titleContainer = document.createElement('div');
-    titleContainer.classList.add('titleContainer')
-
-    const title = document.createElement('h1');
-    title.textContent = 'Menu';
-    title.classList.add('title');
-    titleContainer.appendChild(title);
-    const data = Menu;
     let elements = [];
+    const data = Menu;
     let menu = {};
     const categories = new Set(data.map(function (i) { return i[0] }));
     categories.forEach(item => { menu[item] = []; });
@@ -33,6 +27,10 @@ export default function menu(container) {
         elements.push(div_category);
     });
 
+    const image = new Image(400);
+    image.className = 'food'
+    image.src = Img;
+    elements.push(image);
 
     elements.forEach(e => { container.appendChild(e) });
 }

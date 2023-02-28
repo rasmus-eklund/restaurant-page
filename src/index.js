@@ -1,6 +1,7 @@
 import Home from "./home";
 import Tabs from "./tabs"
 import Menu from "./menu"
+import Contact from "./contact"
 import './style.css';
 
 const content = document.querySelector('div#content');

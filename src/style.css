@@ -11,17 +11,28 @@ html {
 }
 
 #content {
+    display: flex;
+    flex-direction: column;
     margin: auto;
     width: 600px;
     background-color: rgba(241, 241, 241, 0.8);
     padding: 15px;
+    gap: 10px;
+    padding-bottom: 40px;
+}
+
+.title {
+    text-align: center;
+    color: rgb(39, 39, 46);
+    font-size: 80px;
+    user-select: none;
 }
 
 /* Tabs */
 
 .tabs {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 15px 10px;
     border-bottom: 2px solid black
 }
@@ -37,13 +48,6 @@ html {
 
 /* Home */
 
-.title {
-    text-align: center;
-    color: rgb(39, 39, 46);
-    font-size: 80px;
-    user-select: none;
-}
-
 .story {
     padding: 20px;
     display: flex;
@@ -51,11 +55,18 @@ html {
     gap: 20px;
 }
 
+.story p {
+    text-align: justify;
+}
+
 .chef {
     margin: auto;
 }
 
 /* Menu */
+.title.menu {
+    font-size: 40px;
+}
 
 .category {
     padding: 20px 20px;
@@ -69,4 +80,9 @@ html {
 
 .category-title {
     font-size: 20px;
+}
+
+/* Contact */
+.title.contact {
+    font-size: 40px;
 }
