@@ -1,8 +1,72 @@
-#content {
-    background-image: url('./img.jpg');
-    background-color: aqua;
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+* {
+    margin: auto;
+    box-sizing: border-box;
 }
 
-.header {
-    color: blue;
+html {
+    background: url('./bg2.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#content {
+    margin: auto;
+    width: 600px;
+    background-color: rgba(241, 241, 241, 0.8);
+    padding: 15px;
+}
+
+/* Tabs */
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 10px;
+    border-bottom: 2px solid black
+}
+
+.tabs-text {
+    font-size: 30px;
+    user-select: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+/* Home */
+
+.title {
+    text-align: center;
+    color: rgb(39, 39, 46);
+    font-size: 80px;
+    user-select: none;
+}
+
+.story {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chef {
+    margin: auto;
+}
+
+/* Menu */
+
+.category {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.item-text {
+    text-align: left;
+    font-family: 'Cutive Mono';
+}
+
+.category-title {
+    font-size: 20px;
 }
